@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="short icon" href="images/favicon-32x32.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sign Up Form</title>
+  </head>
+  <body>
+    <div class="container grid">
+      <div class="text">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="trial-section">
+        <div class="trial-heading">
+          <p><b>Try it free 7 days</b> then $20/mo. thereafter</p>
+        </div>
+        <div class="trial-form">
+          <form onsubmit="return false">
+            <div class="form-control">
+              <input
+                type="text"
+                name="first-name"
+                id="firstName"
+                placeholder="First Name"
+                required
+              />
+              <p id="fNameEmpty"></p>
+            </div>
+            <div class="form-control">
+              <input
+                type="text"
+                name="last-name"
+                id="lastName"
+                placeholder="Last Name"
+                required
+              />
+              <p id="lNameEmpty"></p>
+            </div>
+            <div class="form-control">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                required
+              />
+              <p id="wrongEmail"></p>
+            </div>
+            <div class="form-control">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                required
+              />
+              <p id="emptyPassword"></p>
+            </div>
+            <input type="button" value="Claim your free trial" class="btn" onclick="return freeTrial();"/>
+            <p>
+              By clicking the button, you are agreeing to our
+              <b class="terms">Terms and Services</b>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+  </body>
+</html>
